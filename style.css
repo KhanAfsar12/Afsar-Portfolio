@@ -7,6 +7,7 @@ body {
     background: linear-gradient(grey, rgb(138, 138, 239), white, grey);
 }
 
+
 header {
     text-align: center;
     margin: 20px 0;
@@ -37,9 +38,8 @@ header {
     margin: 10px auto;
     width: 80%;
 }
-
 hr {
-    border: 1px solid #ccc;
+    border: 1px solid (#ccc);
 }
 
 h1, h3 {
@@ -182,84 +182,4 @@ table.details-table {
 .details-table a {
     color: #2c3e50;
     text-decoration: none;
-}
-
-/* Responsive Design */
-
-@media (max-width: 1200px) {
-    .container {
-        width: 90%;
-    }
-
-    .header-title .projects-link {
-        padding-left: 200px; /* Adjust padding on smaller screens */
-    }
-}
-
-@media (max-width: 992px) {
-    .header-title {
-        font-size: 1.8em;
-    }
-
-    .header-title .projects-link {
-        display: block;
-        padding-left: 0;
-        margin-top: 10px;
-    }
-
-    .profile-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .profile-image {
-        margin: 0 auto 20px auto;
-    }
-}
-
-@media (max-width: 768px) {
-    .header-title {
-        font-size: 1.5em;
-    }
-
-    th, td {
-        padding: 8px;
-    }
-
-    .skills-container span, .hobbies-container div {
-        font-size: 14px;
-        padding: 6px 12px;
-    }
-}
-
-@media (max-width: 576px) {
-    body {
-        background: linear-gradient(grey, rgb(138, 138, 239), white);
-    }
-
-    .header-title {
-        font-size: 1.2em;
-    }
-
-    .profile-name {
-        font-size: 20px;
-    }
-
-    .profile-image {
-        width: 150px;
-        height: 150px;
-    }
-
-    .skills-container, .hobbies-container {
-        gap: 5px;
-    }
-
-    .skills-container span, .hobbies-container div {
-        font-size: 12px;
-        padding: 5px 10px;
-    }
-
-    table {
-        font-size: 12px;
-    }
 }
