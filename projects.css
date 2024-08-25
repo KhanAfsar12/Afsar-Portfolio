@@ -1,201 +1,6 @@
 /* General Styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(grey, rgb(138, 138, 239), white, grey);;
-}
-
-header {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.header-title {
-    font-size: 2em;
-    color: #2c3e50;
-    display: inline-block;
-    position: relative;
-}
-
-.header-title .home-link {
-    font-size: 1em;
-    color: #3498db;
-    text-decoration: none;
-    padding-left: 700px;
-}
-
-.header-title .home-link:hover {
-    text-decoration: underline;
-    color: #2980b9;
-}
-
-.divider {
-    border: none;
-    border-top: 2px solid #2c3e50;
-    margin: 10px auto;
-    width: 80%;
-}
-
-/* Main Container */
-.container {
-    width: 80%;
-    margin: auto;
-    padding: 20px;
-}
-
-/* Intro Section */
-.intro-section {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.intro-section h2 {
-    color: #2c3e50;
-}
-
-.intro-section p {
-    color: #555;
-    font-size: 1.1em;
-}
-
-/* Project Cards */
-.project-cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.project-card {
-    flex: 1 1 calc(33.333% - 20px);
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-    background: linear-gradient(green, yellow);
-}
-
-.project-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-.project-card h3 {
-    color: #2c3e50;
-    margin-bottom: 10px;
-}
-
-.project-card p {
-    color: #555;
-    margin-bottom: 15px;
-}
-
-.project-link {
-    color: #3498db;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.project-link:hover {
-    text-decoration: underline;
-    color: #2980b9;
-}
-
-/* Upcoming Projects */
-.upcoming-section {
-    margin-bottom: 40px;
-}
-
-.upcoming-section h2 {
-    color: #2c3e50;
-}
-
-.upcoming-list {
-    list-style: none;
-    padding: 0;
-}
-
-.upcoming-list li {
-    margin-bottom: 20px;
-}
-
-.upcoming-list h3 {
-    color: #2c3e50;
-    margin-bottom: 5px;
-}
-
-.upcoming-list p {
-    color: #555;
-}
-
-/* Completed Projects Timeline */
-.completed-section {
-    margin-bottom: 40px;
-}
-
-.completed-section h2 {
-    color: #2c3e50;
-}
-
-.project-timeline {
-    position: relative;
-    max-width: 800px;
-    margin: auto;
-}
-
-.timeline-item {
-    position: relative;
-    padding: 20px;
-    margin-bottom: 60px;
-    background: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background: linear-gradient(green, yellow);
-}
-
-.timeline-date {
-    position: absolute;
-    left: -100px;
-    top: 20px;
-    background: linear-gradient(to right, darkblue, rgb(242, 237, 249));
-    color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-    font-weight: bold;
-    text-align: center;
-    width: 80px;
-    font-size: 0.9em;
-}
-
-.timeline-content {
-    padding-left: 120px;
-}
-
-.timeline-content h3 {
-    color: #2c3e50;
-    margin-bottom: 10px;
-}
-
-.timeline-content p {
-    color: #555;
-}
-
-/* Footer Styles */
-footer {
-    text-align: center;
-    margin: 20px 0;
-    padding: 10px 0;
-    background-color: #2c3e50;
-    color: white;
-}
-/* General Styles */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(grey, rgb(138, 138, 239), white, grey);
     color: #333;
     margin: 0;
@@ -219,7 +24,10 @@ header {
     font-size: 1em;
     color: #3498db;
     text-decoration: none;
-    padding-left: 700px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .header-title .home-link:hover {
@@ -236,9 +44,10 @@ header {
 
 /* Main Container */
 .container {
-    width: 80%;
+    width: 90%;
     margin: auto;
     padding: 20px;
+    max-width: 1200px;
 }
 
 /* Intro Section */
@@ -303,33 +112,6 @@ header {
     color: #2980b9;
 }
 
-/* Upcoming Projects */
-.upcoming-section {
-    margin-bottom: 40px;
-}
-
-.upcoming-section h2 {
-    color: #2c3e50;
-}
-
-.upcoming-list {
-    list-style: none;
-    padding: 0;
-}
-
-.upcoming-list li {
-    margin-bottom: 20px;
-}
-
-.upcoming-list h3 {
-    color: #2c3e50;
-    margin-bottom: 5px;
-}
-
-.upcoming-list p {
-    color: #555;
-}
-
 /* Completed Projects Timeline */
 .completed-section {
     margin-bottom: 40px;
@@ -389,4 +171,50 @@ footer {
     padding: 10px 0;
     background-color: #2c3e50;
     color: white;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 1200px) {
+    .project-card {
+        flex: 1 1 calc(33.333% - 20px); /* Show 3 cards per row on medium screens */
+    }
+
+    .header-title .home-link {
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .project-card {
+        flex: 1 1 calc(50% - 20px); /* Show 2 cards per row on smaller screens */
+    }
+
+    .timeline-date {
+        left: -80px;
+    }
+
+    .header-title .home-link {
+        padding-left: 0px;
+        right: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .project-card {
+        flex: 1 1 100%; /* Show 1 card per row on mobile screens */
+    }
+
+    .timeline-content {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .timeline-date {
+        position: static;
+        margin-bottom: 10px;
+    }
+
+    .header-title {
+        font-size: 1.5em;
+    }
 }
