@@ -246,7 +246,7 @@ table.details-table {
     }
 
     .header-title .projects-link {
-        padding-left: 20px; /* Reduced padding for mobile screens */
+        padding-left: 5px; /* Reduced padding for better visibility on smaller screens */
     }
 
     .profile-name {
