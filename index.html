@@ -4,136 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(grey, rgb(138, 138, 239), white, grey);
-
-        }
-
-        hr {
-            border: 1px solid (#ccc);
-        }
-
-        h1, h3 {
-            color: #2c3e50;
-        }
-
-        center {
-            margin-top: 20px;
-        }
-
-        img {
-            border-radius: 50%;
-        }
-
-        h3 {
-            margin-top: 40px;
-            border-bottom: 2px solid #56b0e7;
-            display: inline-block;
-            padding-bottom: 5px;
-        }
-
-        p {
-            margin: 10px 0;
-        }
-
-        ol, ul {
-            margin: 0;
-            padding-left: 20px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-
-        table, th, td {
-            border: 1px solid #ddd;
-        }
-
-        th, td {
-            padding: 10px;
-            text-align: left;
-            
-        }
-
-        th {
-            background: linear-gradient(green, yellow);
-            color: white;
-        }
-
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-
-        .personal-details {
-            margin: 20px 0;
-        }
-
-        .personal-details td {
-            padding: 5px 0;
-        }
-
-        .signature {
-            float: right;
-        }
-
-        footer {
-            margin-top: 50px;
-            text-align: center;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="container">
         <hr>
         <h1>Portfolio</h1>
         <hr>
-        <img src="Afsar.jpg" height="200" alt="Afsar">
-        <h3 style="text-align: center; font-size: 24px; color: #34495e;">Afsar Khan</h3>
+        <div class="profile-container">
+            <div class="profile-image">
+                <img src="Afsar.jpg" alt="Afsar">
+            </div>
+            <div>
+                <h3 class="profile-name">Afsar Khan</h3>
+            </div>
+        </div>
         
-        <p><h3 style="text-align: center; font-size: 24px; color: #34495e;">Career Objectives</h3>
+        <p><h3 class="text-center">Career Objectives</h3>
         Objectives be successful in any that I work, try to achieve maximum efficiency of my job and to be
         always honest, loyal, and committed towards the organization and indeed achieve organization
         growth as well as personal growth.</p>
         <hr>
         
-        <h3 style="text-align: center; font-size: 24px; color: #34495e;">Skills</h3>
-            <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-                <span style="background: linear-gradient(green, yellow); color: white; padding: 8px 15px; border-radius: 20px;">Software Developer</span>
-
-                <span style="background: linear-gradient(green, yellow); color: white; padding: 8px 15px; border-radius: 20px;">Java Programming Language</span>
-                <span style="background: linear-gradient(green, yellow); color: white; padding: 8px 15px; border-radius: 20px;">Java Database Connectivity (JDBC)</span>
-                <span style="background: linear-gradient(green, yellow); color: white; padding: 8px 15px; border-radius: 20px;">Hibernate</span>
-                <span style="background: linear-gradient(green, yellow); color: white; padding: 8px 15px; border-radius: 20px;">Servlet</span>
-                <span style="background: linear-gradient(green, yellow); color: white; padding: 8px 15px; border-radius: 20px;">Java Server Pages (JSP)</span>
-
-
-                <span style="background: linear-gradient(green, yellow); color: white; padding: 8px 15px; border-radius: 20px;">Python Programming Language</span>
-                <span style="background: linear-gradient(green, yellow); color: white; padding: 8px 15px; border-radius: 20px;">Flask Framework</span>
-                <span style="background: linear-gradient(green, yellow); color: white; padding: 8px 15px; border-radius: 20px;">Django</span>
-                <span style="background: linear-gradient(green, yellow); color: white; padding: 8px 15px; border-radius: 20px;">Django Rest Framework</span>
-                <span style="background: linear-gradient(green, yellow); color: white; padding: 8px 15px; border-radius: 20px;">SQLAlchemy</span>
-                <span style="background: linear-gradient(green, yellow); color: white; padding: 8px 15px; border-radius: 20px;">Python Libraries</span>
-                <span style="background: linear-gradient(green, yellow); color: white; padding: 8px 15px; border-radius: 20px;">Docker</span>
-                <span style="background: linear-gradient(green, yellow); color: white; padding: 8px 15px; border-radius: 20px;">Git & GitHub</span>
-                <span style="background: linear-gradient(green, yellow); color: white; padding: 8px 15px; border-radius: 20px;">Databases</span>
-
-
-            </div>
+        <h3 class="text-center">Skills</h3>
+        <div class="skills-container">
+            <span>Software Developer</span>
+            <span>Java Programming Language</span>
+            <span>Java Database Connectivity (JDBC)</span>
+            <span>Hibernate</span>
+            <span>Servlet</span>
+            <span>Java Server Pages (JSP)</span>
+            <span>Python Programming Language</span>
+            <span>Flask Framework</span>
+            <span>Django</span>
+            <span>Django Rest Framework</span>
+            <span>SQLAlchemy</span>
+            <span>Python Libraries</span>
+            <span>Docker</span>
+            <span>Git & GitHub</span>
+            <span>Databases</span>
+        </div>
 
         <hr>
         
-        <h3 style="text-align: center; font-size: 24px; color: #34495e;">Experience</h3>
+        <h3 class="text-center">Experience</h3>
         <table>
             <tr>  
                 <th>Job</th> 
@@ -163,7 +78,7 @@
         </table>
         <hr>
         
-        <h3 style="text-align: center; font-size: 24px; color: #34495e;">Education</h3>
+        <h3 class="text-center">Education</h3>
         <table>
             <tr>  
                 <th>Course/Degree</th> 
@@ -183,94 +98,69 @@
             <tr>  
                 <td>BSC IT</td> 
                 <td>75.22</td> 
-                <td>Insha allah     Pass</td>  
+                <td>Insha allah Pass</td>  
             </tr>
         </table>
         <hr>
         
-        <h3 style="text-align: center; font-size: 24px; color: #34495e;">Achievements</h3>
+        <h3 class="text-center">Achievements</h3>
         <ol>
             <li>Oracle Certified Foundations Associate</li>
             <li>Oracle Certified Professional</li>
         </ol>
         <hr>
         
-<h3 style="text-align: center; font-size: 24px; color: #34495e;">Hobbies</h3>
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 700px; margin: 0 auto;">
-    <div style="background: linear-gradient(green, yellow); color: white; padding: 10px 20px; border-radius: 20px; text-align: center; font-size: 16px;">
-        Playing Football
-    </div>
-    <div style="background: linear-gradient(green, yellow); color: white; padding: 10px 20px; border-radius: 20px; text-align: center; font-size: 16px;">
-        Playing Cricket
-    </div>
-    <div style="background: linear-gradient(green, yellow); color: white; padding: 10px 20px; border-radius: 20px; text-align: center; font-size: 16px;">
-        Traveling
-    </div>
-    <div style="background: linear-gradient(green, yellow); color: white; padding: 10px 20px; border-radius: 20px; text-align: center; font-size: 16px;">
-        Learning Programming
-    </div>
-    <div style="background: linear-gradient(green, yellow); color: white; padding: 10px 20px; border-radius: 20px; text-align: center; font-size: 16px;">
-        Writing
-    </div>
-    <div style="background: linear-gradient(green, yellow); color: white; padding: 10px 20px; border-radius: 20px; text-align: center; font-size: 16px;">
-        Typing
-    </div>
-    <div style="background: linear-gradient(green, yellow); color: white; padding: 10px 20px; border-radius: 20px; text-align: center; font-size: 16px;">
-        Calligraphy Artist
-    </div>
-    
-</div>
+        <h3 class="text-center">Hobbies</h3>
+        <div class="hobbies-container">
+            <div>Playing Football</div>
+            <div>Playing Cricket</div>
+            <div>Traveling</div>
+            <div>Learning Programming</div>
+            <div>Writing</div>
+            <div>Typing</div>
+            <div>Calligraphy Artist</div>
+        </div>
 
         <hr>
         
-<h3 style="text-align: center; font-size: 24px; color: #34495e;">Personal Details</h3>
-<div>
-    <table style="width: 100%; border-spacing: 10px;">
-        <tr>
-            <td style="padding: 15px; font-weight: bold; color: #2c3e50;"><i class="fa fa-user" style="color: #3498db;"></i> Name:</td>
-            <td style="padding: 15px;">Khan Afsar Akhtar Hussain</td>
-        </tr>
-        <tr>
-            <td style="padding: 15px; font-weight: bold; color: #2c3e50;"><i class="fa fa-calendar" style="color: #3498db;"></i> DOB:</td>
-            <td style="padding: 15px;">06/06/2004</td>
-        </tr>
-        <tr>
-            <td style="padding: 15px; font-weight: bold; color: #2c3e50;"><i class="fa fa-map-marker" style="color: #3498db;"></i> Address:</td>
-            <td style="padding: 15px;">Room no: 04, Balwant Gosavi Chawl, Chirag Nagar, Ghatkopar, Mumbai, Maharashtra, 400086</td>
-        </tr>
-        <tr>
-            <td style="padding: 15px; font-weight: bold; color: #2c3e50;"><i class="fa fa-male" style="color: #3498db;"></i> Gender:</td>
-            <td style="padding: 15px;">Male</td>
-        </tr>
-        <tr>
-            <td style="padding: 15px; font-weight: bold; color: #2c3e50;"><i class="fa fa-flag" style="color: #3498db;"></i> Nationality:</td>
-            <td style="padding: 15px;">Indian</td>
-        </tr>
-        <tr>
-            <td style="padding: 15px; font-weight: bold; color: #2c3e50;"><i class="fa fa-heart" style="color: #3498db;"></i> Marital Status:</td>
-            <td style="padding: 15px;">Unmarried</td>
-        </tr>
-        <tr>
-            <td style="padding: 15px; font-weight: bold; color: #2c3e50;"><i class="fa fa-language" style="color: #3498db;"></i> Languages Known:</td>
-            <td style="padding: 15px;">Urdu, English, Hindi</td>
-        </tr>
-        <tr>
-            <td style="padding: 15px; font-weight: bold; color: #2c3e50;"><i class="fa fa-envelope" style="color: #3498db;"></i> Email:</td>
-            <td style="padding: 15px;"><a href="mailto:ka484564@gmail.com" style="color: #2c3e50; text-decoration: none;">ka484564@gmail.com</a></td>
-        </tr>
-        <tr>
-            <td style="padding: 15px; font-weight: bold; color: #2c3e50;"><i class="fa fa-phone" style="color: #3498db;"></i> Contact:</td>
-            <td style="padding: 15px;"><a href="tel:+919967034517" style="color: #2c3e50; text-decoration: none;">+91 9967034517</a></td>
-        </tr>
-    </table>
-</div>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+        <h3 class="text-center">Personal Details</h3>
+        <div>
+            <table class="details-table">
+                <tr>
+                    <td><i class="fa fa-user"></i> Name:</td>
+                    <td>Khan Afsar Akhtar Hussain</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-calendar"></i> DOB:</td>
+                    <td>06/06/2004</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-map-marker"></i> Address:</td>
+                    <td>Room no: 04, Balwant Gosavi Chawl, Chirag Nagar, Ghatkopar, Mumbai, Maharashtra, 400086</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-male"></i> Gender:</td>
+                    <td>Male</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-flag"></i> Nationality:</td>
+                    <td>Indian</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-mobile"></i> Phone:</td>
+                    <td>8451913065</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-envelope"></i> Email:</td>
+                    <td><a href="mailto:afsar@live.in">afsar@live.in</a></td>
+                </tr>
+            </table>
+        </div>
         <hr>
+        
         
         <footer>
-            <h1>----------Thank you----------</h1>
+            <p>&copy; 2024 Afsar Khan</p>
         </footer>
     </div>
 </body>
