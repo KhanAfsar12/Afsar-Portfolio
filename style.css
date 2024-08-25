@@ -7,6 +7,37 @@ body {
     background: linear-gradient(grey, rgb(138, 138, 239), white, grey);
 }
 
+
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.header-title {
+    font-size: 2em;
+    color: #2c3e50;
+    display: inline-block;
+    position: relative;
+}
+
+.header-title .projects-link {
+    font-size: 1em;
+    color: #3498db;
+    text-decoration: none;
+    padding-left: 400px; /* Adds space between Portfolio and Projects */
+}
+
+.header-title .projects-link:hover {
+    text-decoration: underline;
+    color: #2980b9;
+}
+
+.divider {
+    border: none;
+    border-top: 2px solid #2c3e50;
+    margin: 10px auto;
+    width: 80%;
+}
 hr {
     border: 1px solid (#ccc);
 }
