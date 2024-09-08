@@ -283,27 +283,3 @@ table.details-table {
         font-size: 12px;
     }
 }
-
-
-@media (max-width: 768px) {
-    .container {
-        width: 100%;
-        padding: 0 20px;
-    }
-
-    .whatsapp-button a {
-        padding: 8px;
-    }
-
-    .whatsapp-button img {
-        width: 35px;
-        height: 35px;
-    }
-}
-
-@media (max-width: 480px) {
-    .whatsapp-button img {
-        width: 30px;
-        height: 30px;
-    }
-}
