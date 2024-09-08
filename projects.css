@@ -42,6 +42,18 @@ header {
     width: 80%;
 }
 
+
+.whatsapp-button a{
+    display: inline-flex;
+    margin-left: 1100px;
+}
+
+
+.whatsapp-button a:hover {
+    background: linear-gradient(green, yellow);
+}
+
+
 /* Main Container */
 .container {
     width: 90%;
@@ -167,10 +179,6 @@ header {
 /* Footer Styles */
 footer {
     text-align: center;
-    margin: 20px 0;
-    padding: 10px 0;
-    background-color: #2c3e50;
-    color: white;
 }
 
 /* Media Queries for Responsive Design */

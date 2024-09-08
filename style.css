@@ -38,6 +38,18 @@ header {
     width: 80%;
 }
 
+
+.whatsapp-button a{
+    display: inline-flex;
+    margin-left: 1100px;
+}
+
+
+.whatsapp-button a:hover {
+    background: linear-gradient(green, yellow);
+}
+
+
 hr {
     border: 1px solid #ccc;
 }
